@@ -82,7 +82,6 @@ sudo apt install -y screen
 ```
 
 #### Start:
-##### RHEL
 ```shell
 chmod +x ./'Start Script'/GoG110.sh
 ./'Start Script'/GoG110.sh
