@@ -194,7 +194,7 @@ typedef struct plugin_event_s
 } plugin_event_s;
 
 
-struct lcdnode_s {
+typedef struct lcdnode_s {
     g15daemon_t *list;
     lcdnode_t *prev;
     lcdnode_t *next;
@@ -202,7 +202,7 @@ struct lcdnode_s {
     lcd_t *lcd;
 }lcdnode_s;
 
-struct g15daemon_s
+typedef struct g15daemon_s
 {
     lcdnode_t *head;
     lcdnode_t *tail;
@@ -215,8 +215,8 @@ struct g15daemon_s
     unsigned int remote_keyhandler_sock;
 }g15daemon_s;
 
-pthread_mutex_t lcdlist_mutex;
-pthread_mutex_t g15lib_mutex;
+extern pthread_mutex_t lcdlist_mutex;
+extern pthread_mutex_t g15lib_mutex;
 
 /* server hello */
 #define SERV_HELO "G15 daemon HELLO"
