@@ -39,6 +39,7 @@ cd ..
 ##
 cd 'G110 Led Control'/logitech-keyboard-change-color-master
 make
+sudo make install
 cd ../..
 ##
 sudo yum install -y screen
@@ -76,6 +77,7 @@ cd ..
 ##
 cd 'G110 Led Control'/logitech-keyboard-change-color-master
 make
+sudo make install
 cd ../..
 ##
 sudo apt install -y screen
