@@ -44,6 +44,9 @@
 #include <libg15render.h>
 #include "g15daemon.h"
 
+pthread_mutex_t lcdlist_mutex;
+pthread_mutex_t g15lib_mutex;
+
 #ifndef LIBG15_VERSION
 #define LIBG15_VERSION 1000
 #endif
